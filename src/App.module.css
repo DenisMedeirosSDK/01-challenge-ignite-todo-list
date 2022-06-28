@@ -1,0 +1,124 @@
+.content {
+  max-width: 46rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.taskBarContainer {
+  margin-top: -27px;
+}
+
+.taskBar {
+  display: flex;
+  gap: 0.5rem;
+}
+.input {
+  flex: 1;
+  height: 54px;
+  border-radius: 8px;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border: 1px solid var(--gray-700);
+  padding: 1rem;
+}
+
+.input::placeholder {
+  color: var(--gray-300);
+}
+
+.input:focus {
+  border: 0;
+}
+
+.button {
+  background: var(--blue-dark);
+  height: 52px;
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--gray-100);
+  font-weight: bold;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button:not(:disabled):hover {
+  background: var(--blue);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.content section {
+  margin-top: calc(27px + 4rem);
+}
+
+.content section header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalTask {
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: bold;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.totalTask span {
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  color: var(--gray-200);
+}
+
+.completTask {
+  color: var(--purple);
+  font-size: 0.875rem;
+  font-weight: bold;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.completTask span {
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  color: var(--gray-200);
+}
+
+.listTasksBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.listEmptyBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listEmptyBox svg {
+  margin-bottom: 1rem;
+}
+
+.listEmptyBox p {
+  color: var(--gray-300);
+  font-weight: bold;
+  line-height: 1.4rem;
+}
+
+.listEmptyBox span {
+  color: var(--gray-300);
+  line-height: 1.4rem;
+}

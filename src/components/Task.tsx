@@ -29,7 +29,6 @@ export function Task({
       <div className={styles.checkBox}>
         <input
           type="checkbox"
-          // className={styles.input}
           readOnly
           checked={isComplete}
           onClick={handleCheckTask}

@@ -106,10 +106,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: 1px solid var(--gray-300);
+  border-radius: 0.5rem;
+  padding-top: 24px;
 }
 
 .listEmptyBox svg {
   margin-bottom: 1rem;
+  color: var(--gray-300);
 }
 
 .listEmptyBox p {
